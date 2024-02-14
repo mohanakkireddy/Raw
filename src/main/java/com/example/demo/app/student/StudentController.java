@@ -8,9 +8,12 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 
 @RestController
 @RequestMapping(path = "api/v1/student")
+@CrossOrigin
 public class StudentController {
 
     private final StudentService studentService;
@@ -42,14 +45,16 @@ public class StudentController {
         studentService.updateStudent(studentId, name, email);
     }
     @PostMapping("/post")
-    public void registerNewStudent(@RequestBody Student student){
-        studentService.addNewStudent(student);
+    public Student registerNewStudent(@RequestBody Student student){
+       return studentService.addNewStudent(student);
+
     }
     @PostMapping("/register")
     public List<Violation> submitForm(@RequestBody Customer customer) {
         return programmaticallyValidatingService.validateInputWithInjectedValidator(customer);
 
     }
+
 
 
 }

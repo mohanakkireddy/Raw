@@ -22,8 +22,9 @@ public class Student {
     private String email;
     private LocalDate dob;
 
-    @Transient
-    private Integer age;
+
+//    @Transient
+//    private Integer age;
 
     public Student(Long id, String name, String email, LocalDate dob) {
         this.id = id;
@@ -73,14 +74,14 @@ public class Student {
     public void setDob(LocalDate dob) {
         this.dob = dob;
     }
-
-    public Integer getAge() {
-        return Period.between(this.dob, LocalDate.now()).getYears();
-    }
-
-    public void setAge(Integer age) {
-        this.age = age;
-    }
+//
+//    public Integer getAge() {
+//        return Period.between(this.dob, LocalDate.now()).getYears();
+//    }
+//
+//    public void setAge(Integer age) {
+//        this.age = age;
+//    }
 
     @Override
     public String toString() {
@@ -89,7 +90,7 @@ public class Student {
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 ", dob=" + dob +
-                ", age=" + age +
+//                ", age=" + age +
                 '}';
     }
 }

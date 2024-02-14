@@ -1,15 +1,15 @@
-package com.example.demo.student.service;
+package com.example.demo.app.customer.service;
 
-import com.example.demo.student.dto.ResponseDto;
-import com.example.demo.student.dto.user.SignupDto;
-import com.example.demo.student.repository.UserRepository;
+import com.example.demo.app.customer.dto.ResponseDto;
+import com.example.demo.app.customer.dto.user.SignupDto;
+import com.example.demo.app.customer.repository.UsersRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class UserService {
     @Autowired
-    UserRepository userRepository;
+    UsersRepository usersRepository;
 
     public ResponseDto signUp(SignupDto signupDto) {
         ResponseDto responseDto = new ResponseDto("success", "dummy repo");

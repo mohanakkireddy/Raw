@@ -1,8 +1,7 @@
-package com.example.demo.student;
+package com.example.demo.app.student;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.time.Period;
 
 @Entity
 @Table

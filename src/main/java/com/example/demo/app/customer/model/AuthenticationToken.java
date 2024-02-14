@@ -1,4 +1,4 @@
-package com.example.demo.student.model;
+package com.example.demo.app.customer.model;
 
 import javax.persistence.*;
 import java.util.Date;

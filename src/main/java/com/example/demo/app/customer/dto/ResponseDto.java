@@ -1,4 +1,4 @@
-package com.example.demo.student.dto;
+package com.example.demo.app.customer.dto;
 
 public class ResponseDto {
 

@@ -1,8 +1,4 @@
-package com.example.demo.student.dto;
-
-import java.util.ArrayList;
-import java.util.List;
-
+package com.example.demo.app.customer.dto;
 
 
 public class Violation {

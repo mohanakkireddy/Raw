@@ -1,4 +1,4 @@
-package com.example.demo.student.dto.user;
+package com.example.demo.app.customer.dto.user;
 
 public class SignupDto {
     private  String firstName;

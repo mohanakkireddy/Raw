@@ -1,7 +1,7 @@
-package com.example.demo;
+package com.example.demo.app.customer;
 
-import com.example.demo.student.dto.Customer;
-import com.example.demo.student.dto.Violation;
+import com.example.demo.app.customer.dto.Customer;
+import com.example.demo.app.customer.dto.Violation;
 import org.springframework.stereotype.Service;
 
 import javax.validation.ConstraintViolation;

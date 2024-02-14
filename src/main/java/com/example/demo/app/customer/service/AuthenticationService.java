@@ -1,4 +1,4 @@
-package com.example.demo.student.service;
+package com.example.demo.app.customer.service;
 
 public class AuthenticationService {
 }

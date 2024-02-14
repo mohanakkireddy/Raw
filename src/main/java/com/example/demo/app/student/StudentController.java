@@ -1,15 +1,11 @@
-package com.example.demo.student;
+package com.example.demo.app.student;
 
-import com.example.demo.ProgrammaticallyValidatingService;
-import com.example.demo.student.dto.Customer;
-import com.example.demo.student.dto.Violation;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.example.demo.app.customer.ProgrammaticallyValidatingService;
+import com.example.demo.app.customer.dto.Customer;
+import com.example.demo.app.customer.dto.Violation;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Valid;
 import java.util.List;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 
 @RestController
 @RequestMapping(path = "api/v1/student")
